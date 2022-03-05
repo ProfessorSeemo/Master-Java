@@ -1,0 +1,27 @@
+package Randoms;
+
+import java.util.Random;
+
+public class Randoms {
+    public static void main(String[] args) {
+
+        Random random = new Random();
+
+        // 50 to 100
+        // a  to b
+        // b - a  = d
+        // 50 to 100
+        int RandomInt = 50 + random.nextInt(51); // 100 - 50 = 50 +1
+        //         int RandomInt = a + random.nextInt( d+1); a to b
+                int myInt = random.nextInt(101); // 0 to n - 1
+        System.out.println(myInt);
+
+        double myDouble = random.nextDouble();
+        System.out.println(myDouble);
+
+        boolean myBoolean = random.nextBoolean();
+        System.out.println(myBoolean);
+
+
+    }
+}
